@@ -64,6 +64,29 @@ $("#submit-button").on("click" , function() {
 		};
 	});
 
+});
+	/* Google Maps */
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 26.546482, lng: -80.088786},
+          zoom: 16
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+        	position: map.getCenter(),
+        	map: map,
+        	title: 'Click to zoom'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+    		map.setZoom(15);
+    		map.setCenter(marker.getPosition());
+  		});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
 	/* FAQ Section */
 
 	var rows = $(".my-row");
@@ -80,6 +103,8 @@ $("#submit-button").on("click" , function() {
 	
 	};
 };
-});
+
+
+
 
 
