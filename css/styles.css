@@ -293,15 +293,28 @@ p {
 	color: #fff;
 }
 
+#mobile-only-portfolio {
+	display: none;
+}
+
 .image {
 	box-sizing: border-box;
 	border: 2px solid #000;
 	width: 39em;
 	height: 19.125em;
-	margin: 5px;
+	margin: 0.25em;
 	display: inline-block;
 	position: relative;
 	background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+	#portfolio {
+		display: none;
+	}
+	#mobile-only-portfolio {
+		display: block;
+	}
 }
 
 
