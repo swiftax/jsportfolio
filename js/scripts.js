@@ -14,13 +14,10 @@ for (var i = 0; i < portfolioItems.length; ++i) {
 $(".image").mouseenter( function () {
 	console.log(portfolioItems[this.id].title);
 	$(this).html("<p class='info'><span class='proj-title'>Title:</span> " + portfolioItems[this.id].title + "</p>");
-	$("#0").append("<p><a href='http://www.swiftax.com' target='_blank'>Swiftax</a></p>");
-	$("a").css("color", "white");
 
 
 }).mouseleave( function () {
 	$("p.info").html("");
-	$("a").html("");
 });
 
 

@@ -78,6 +78,7 @@ button.navbar-toggle {
 	color: #bc964f;
 }
 
+
  img {
 	height: 100%;
 	width: 100%;
@@ -257,7 +258,7 @@ p {
 	text-align: center;
 }
  
-.image {
+.photo {
 	display: inline-block;
 	float: left;
 	margin-right: 0.5rem;
@@ -278,8 +279,18 @@ p {
 
 /* Portfolio */
 
-#portfolio h1 {
-	padding-top: 1em;
+.portfolio-header {
+	background-image: url('../img/piano.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 512px;
+}
+
+.portfolio-header h1 {
+	padding-top: 5em;
+	text-align: center;
+	color: #fff;
 }
 
 .image {
