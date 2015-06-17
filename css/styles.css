@@ -276,9 +276,42 @@ p {
 	width: 35rem;
 }
 
+/* Portfolio */
+
 #portfolio h1 {
 	padding-top: 1em;
 }
+
+.image {
+	box-sizing: border-box;
+	border: 2px solid #000;
+	width: 39em;
+	height: 19.125em;
+	margin: 5px;
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+
+.info {
+	display: inline-block;
+	color: #fff;
+	font-family: Futura;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1.6;
+	position: absolute;
+	top: 30%;
+	left: 22%;
+	font-size: 2em;
+}
+
+.proj-title {
+	font-weight: 400;
+	font-size: 1em;
+}
+
 
 /* FAQ */
 
